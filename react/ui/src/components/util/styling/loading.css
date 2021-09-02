@@ -1,0 +1,36 @@
+div.dk-loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.dk-loading div {
+    border-top: 15px solid;
+    padding: 5px;
+    border-radius: 20px;
+    animation: loading-spin 3s ease-in-out infinite;
+}
+div.dk-loading .yellow {
+    border-color: #ffb400;
+}
+div.dk-loading .violet {
+    border-color: #574587;
+}
+div.dk-loading .red {
+    border-color: #aebf1e;
+}
+div.dk-loading .circle {
+    border: 15px solid #574587;
+}
+@keyframes loading-spin {
+    from {
+        transform: rotate(0deg);
+   }
+    70% {
+        transform: rotate(270deg);
+   }
+    to {
+        transform: rotate(360deg);
+   }
+}
